@@ -21,12 +21,20 @@ Stakeholder
 
 
 Use cases
----
-1. Customer want to see his products order status.
+—
+1.  Use Case Name : See order status
+Actor :
+- Customer
+- Transaction system
 
-2. Admin want to provide and update status for the customer.
+Description : After customer finish payment. Transaction system will return a tracking id. And customer can use the tracking id to check order status in the future.
+ 
 
-3. Admin want to authorise before doing everything.
+2. Use Case Name : Update Status
+Actor :
+-  Admin
+
+Description : After admin already authenticated and customer already finished payment. Admin able to see the orders that customer finish payment (made by the transaction system). And then admin can update that orders state to let customers know the status.
 
 
 
@@ -37,7 +45,7 @@ provided soon...
 
 Repository
 ---
-Github: https://github.com/batmaster/ProductTrackingService.git
+Github: https://github.com/batmaster/OrderTrackingService.git
 
 
 Developers

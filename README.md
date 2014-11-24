@@ -18,21 +18,20 @@ Stakeholder
 ---
 * Customer
 * Admin (e-commerce owner or staff)
-
+* Transaction system
 
 Use cases
-—--
+---
 1.  Use Case Name : See order status
-Actor :
-* Customer
-* Transaction system
+
+Actor : Customer , Transaction system
 
 Description : After customer finish payment. Transaction system will return a tracking id. And customer can use the tracking id to check order status in the future.
  
 
 2. Use Case Name : Update Status
-Actor :
-*  Admin
+
+Actor : Admin
 
 Description : After admin already authenticated and customer already finished payment. Admin able to see the orders that customer finish payment (made by the transaction system). And then admin can update that orders state to let customers know the status.
 

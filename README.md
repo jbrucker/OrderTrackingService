@@ -22,14 +22,14 @@ Stakeholder
 
 Use cases
 ---
-1.  Use Case Name : See order status
+1 Use Case Name : See order status
 
 Actor : Customer , Transaction system
 
 Description : After customer finish payment. Transaction system will return a tracking id. And customer can use the tracking id to check order status in the future.
  
 
-2. Use Case Name : Update Status
+2 Use Case Name : Update Status
 
 Actor : Admin
 

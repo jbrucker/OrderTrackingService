@@ -39,8 +39,7 @@ Description : After admin already authenticated and customer already finished pa
 
 API Specification
 ---
-provided soon...
-
+https://docs.google.com/document/d/1iKT14ru_fQzlMcY-z1sd4p9uiCwZ5L1FjiYW55mbXpo/edit
 
 Repository
 ---

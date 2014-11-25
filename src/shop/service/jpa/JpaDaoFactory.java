@@ -7,7 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import shop.service.DaoFactory;
-import shop.service.ProductDao;
+import shop.service.OrderDao;
 
 /**
  * JpaDaoFactory is a factory for DAO that use the Java Persistence API (JPA)
@@ -20,10 +20,10 @@ import shop.service.ProductDao;
  */
 public class JpaDaoFactory extends DaoFactory {
 	
-	private static final String PERSISTENCE_UNIT = "product";
+	private static final String PERSISTENCE_UNIT = "order";
 	
 	/** instance of the entity DAO */
-	private ProductDao contactDao;
+	private OrderDao orderDao;
 	private final EntityManagerFactory emf;
 	private EntityManager em;
 	private static Logger logger;
@@ -38,15 +38,15 @@ public class JpaDaoFactory extends DaoFactory {
 	public JpaDaoFactory() {
 		emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT);
 		em = emf.createEntityManager();
-		contactDao = new JpaProductDao( em );
+		orderDao = new JpaOrderDao( em );
 	}
 	
 	/**
-	 * @see shop.service.DaoFactory#getContactDao()
+	 * @see shop.service.DaoFactory#getProductDao()
 	 */
 	@Override
-	public ProductDao getContactDao() {
-		return contactDao;
+	public OrderDao getOrderDao() {
+		return orderDao;
 	}
 	
 	/**

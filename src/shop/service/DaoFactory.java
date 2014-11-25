@@ -10,7 +10,7 @@ import shop.service.jpa.JpaDaoFactory;
  */
 public abstract class DaoFactory {
 	
-	/** Sigleton instance of this subclass. **/
+	/** Singleton instance of this subclass. **/
 	private static DaoFactory factory;
 	
 	/**
@@ -35,7 +35,7 @@ public abstract class DaoFactory {
 	 * Return this subclass factory.
 	 * @return singleton instance of this subclass
 	 */
-	public abstract ProductDao getContactDao();
+	public abstract OrderDao getOrderDao();
 	
 	/**
 	 * Method contains function to handle shutdown for DaoFactory.

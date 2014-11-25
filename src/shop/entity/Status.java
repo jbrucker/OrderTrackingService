@@ -16,6 +16,38 @@ public class Status {
 	private String date;
 	@XmlElement
 	private String description;
+	public StatusType getStatusType() {
+		return statusType;
+	}
+
+	public void setStatusType(StatusType statusType) {
+		this.statusType = statusType;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getUpdatedby() {
+		return updatedby;
+	}
+
+	public void setUpdatedby(String updatedby) {
+		this.updatedby = updatedby;
+	}
+
 	@XmlElement
 	private String updatedby;
 	

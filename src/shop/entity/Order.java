@@ -34,4 +34,24 @@ public class Order {
 	public void addStatus(Status status){
 		statuslist.add(status);
 	}
+	
+	public List<Status> getStatusList(){
+		return statuslist;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public List<Status> getStatuslist() {
+		return statuslist;
+	}
+
+	public void setStatuslist(List<Status> statuslist) {
+		this.statuslist = statuslist;
+	}
 }

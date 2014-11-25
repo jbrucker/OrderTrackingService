@@ -1,6 +1,7 @@
 package shop.service;
 
-import shop.entity.Products;
+import shop.entity.Order;
+import shop.entity.Orders;
 
 /**
  * An abstract for contact dao contains method for handling
@@ -9,21 +10,23 @@ import shop.entity.Products;
  * @author Poramate Homprakob 5510546077
  *
  */
-public abstract class ProductDao {
-
-	/** A runner id for auto assign id to a new contact. */
-	private static int runnerId = 1;
+public abstract class OrderDao {
 
 	/**
 	 * Get the exist contact in the list with specific id.
 	 * @param id id of the contact that want to find
 	 * @return contact with specific id, null if not found
 	 */
-	public abstract Products find(long id);
+	public abstract Order find(long id);
 	
 	/**
 	 * Get list of all contacts.
 	 * @return list of all contacts
 	 */
-	public abstract Products findAll();
+	public abstract Orders findAll();
+
+	
+	public abstract boolean containID(long l);
+	
+	public abstract boolean update(Order order);
 }
